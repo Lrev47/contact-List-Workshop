@@ -1,4 +1,3 @@
-
 import "./App.css";
 import { useState } from "react";
 import ContactList from "./components/ContactList";
@@ -10,9 +9,9 @@ export default function App() {
   return (
     <>
       {selectedContactId ? (
-        <div>Selected Contact View</div>
+        <SelectedContact selectedContactId={selectedContactId} />
       ) : (
-        <ContactList />
+        <ContactList setSelectedContactId={setSelectedContactId} />
       )}
     </>
   );
