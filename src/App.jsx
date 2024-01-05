@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import './App.css'
+import ContactList from './components/ContactList'
 
-function App() {
-  
 
+ function App() {
   return (
-    <>
-    <div>PlaceHolder</div>
+    <> 
+    <ContactList/>
     </>
   )
 }
